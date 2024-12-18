@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Read CSV data
-df = pd.read_csv('oh-lottery.csv')
+df = pd.read_csv('./oh-lottery_main.csv')
 
 # Count main numbers frequency
 main_numbers = df[['Number 1', 'Number 2', 'Number 3', 'Number 4', 'Number 5', 'Number 6']].values.ravel()
