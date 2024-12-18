@@ -106,8 +106,10 @@ predicted_3rd = build_and_evaluate_model(df, '3rd Prize Amount')
 
 # 결과 출력
 result = {
-    "1st_prize": predicted_1st,
-    "2nd_prize": predicted_2nd,
-    "3rd_prize": predicted_3rd
+    "Predicted 1st Prize Amount": float(predicted_1st),
+    "Predicted 2nd Prize Amount": float(predicted_2nd),
+    "Predicted 3rd Prize Amount": float(predicted_3rd)
 }
-print(json.dumps(result))
+
+print("\n===== Predicted Prize Amounts for Next Round =====")
+print(json.dumps(result, indent=4))
